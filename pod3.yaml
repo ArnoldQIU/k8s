@@ -24,7 +24,7 @@ spec:
         command: ["/bin/sh"]
         args: ["-c", "while true; do echo hello; sleep 10;done"]
         ports:
-        - containerPort: 80
+        - containerPort: 25000
         volumeMounts:
         - mountPath: /quorum
           name: git-volume
