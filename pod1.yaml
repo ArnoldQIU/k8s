@@ -24,7 +24,12 @@ spec:
         command: ["/bin/sh"]
         args: ["-c", "while true; do echo hello; sleep 10;done"]
         ports:
-        - containerPort: 25000
+        - name: raftport
+          containerPort: 50401
+        - name: rpcport
+          containerPort: 22000
+        - name: ipc
+          containerPort: 21000
         volumeMounts:
         - mountPath: /quorum
           name: git-volume

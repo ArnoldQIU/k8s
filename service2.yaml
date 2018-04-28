@@ -8,6 +8,11 @@ spec:
   selector:
     node: node2
   ports:
-  - port: 25000
-    targetPort: 25000
+  - name: discovery
+    port: 25000
+    targetPort: 21001
+  - name: raftport
+    targetPort: 50402
+  - name: rpcport
+    targetPort: 22001
   type: LoadBalancer
