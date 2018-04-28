@@ -12,7 +12,9 @@ spec:
     port: 25000
     targetPort: 21000
   - name: raftport
+    port: 50401
     targetPort: 50401
   - name: rpcport
+    port: 22000
     targetPort: 22000
   type: LoadBalancer
