@@ -8,7 +8,9 @@ spec:
   selector:
     node: node1
   ports:
-  - protocol: TCP
-    port: 3000
-    targetPort: 3000
+  - name: discovery
+    protocol: UDP
+    port: 30301
+  - name: http
+    port: 8080
   type: LoadBalancer
