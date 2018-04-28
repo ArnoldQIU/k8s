@@ -30,6 +30,8 @@ spec:
           containerPort: 22000
         - name: ipc
           containerPort: 21000
+        - name: geth
+          containerPort: 9001
         volumeMounts:
         - mountPath: /quorum
           name: git-volume

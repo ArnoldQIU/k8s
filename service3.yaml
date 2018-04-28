@@ -8,6 +8,7 @@ spec:
   selector:
     node: node3
   ports:
-  - port: 25000
+  - name: discovery
+    port: 25000
     targetPort: 25000
   type: LoadBalancer

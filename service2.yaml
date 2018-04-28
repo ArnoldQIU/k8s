@@ -9,7 +9,7 @@ spec:
     node: node2
   ports:
   - name: discovery
-    port: 25000
+    port: 21001
     targetPort: 21001
   - name: raftport
     port: 50402

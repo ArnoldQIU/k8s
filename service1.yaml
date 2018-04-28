@@ -8,8 +8,8 @@ spec:
   selector:
     node: node1
   ports:
-  - name: discovery
-    port: 25000
+  - name: ipc
+    port: 21000
     targetPort: 21000
   - name: raftport
     port: 50401
@@ -17,7 +17,7 @@ spec:
   - name: rpcport
     port: 22000
     targetPort: 22000
-  - name: get
+  - name: geth
     port: 9001
     targetPort: 9001
   type: LoadBalancer
