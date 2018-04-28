@@ -11,6 +11,4 @@ spec:
   - name: discovery
     protocol: UDP
     port: 30301
-  - name: http
-    port: 8080
   type: LoadBalancer
