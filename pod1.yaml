@@ -27,7 +27,6 @@ spec:
         - name: discovery  
           containerPort: 30301
           protocol: UDP
-
         volumeMounts:
         - mountPath: /quorum
           name: git-volume

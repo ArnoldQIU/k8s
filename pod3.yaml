@@ -24,7 +24,9 @@ spec:
         command: ["/bin/sh"]
         args: ["-c", "while true; do echo hello; sleep 10;done"]
         ports:
-        - containerPort: 3000
+        - name: discovery  
+          containerPort: 30301
+          protocol: UDP
         volumeMounts:
         - mountPath: /quorum
           name: git-volume
