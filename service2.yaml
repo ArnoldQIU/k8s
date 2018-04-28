@@ -2,11 +2,11 @@ kind: Service
 apiVersion: v1
 metadata:
   labels:
-    node: node1
-  name: nodesvc
+    node: node2
+  name: nodesvc2
 spec:
   selector:
-    node: node1
+    node: node2
   ports:
   - protocol: TCP
     port: 3000

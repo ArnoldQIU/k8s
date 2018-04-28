@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   labels:
     node: node1
-  name: nodesvc
+  name: nodesvc1
 spec:
   selector:
     node: node1
