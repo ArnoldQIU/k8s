@@ -17,4 +17,7 @@ spec:
   - name: rpcport
     port: 22000
     targetPort: 22000
+  - name: get
+    port: 9001
+    targetPort: 9001
   type: LoadBalancer
