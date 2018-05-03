@@ -5,6 +5,8 @@ metadata:
     node: node4
   name: nodesvc4
 spec:
+  selector:
+    node: node4
   ports:
   - name: ipc
     port: 21003

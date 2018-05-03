@@ -5,6 +5,8 @@ metadata:
     node: node6
   name: nodesvc6
 spec:
+  selector:
+    node: node6
   ports:
   - name: ipc
     port: 21005
