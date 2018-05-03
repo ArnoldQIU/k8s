@@ -15,8 +15,8 @@ spec:
   template:
     metadata:
       labels:
-        node: node3
         app: 7node
+        node: node3
     spec:
       containers:
       - name: 7node
@@ -24,7 +24,14 @@ spec:
         command: ["/bin/sh"]
         args: ["-c", "while true; do echo hello; sleep 10;done"]
         ports:
-        - containerPort: 25000
+        - name: raftport
+          containerPort: 50403
+        - name: rpcport
+          containerPort: 22002
+        - name: ipc
+          containerPort: 21002
+        - name: geth
+          containerPort: 9003
         volumeMounts:
         - mountPath: /quorum
           name: git-volume
@@ -33,5 +40,6 @@ spec:
       - name: git-volume
         gitRepo:
           repository: "https://github.com/ArnoldQIU/Docker.git"
+
 
 

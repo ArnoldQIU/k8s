@@ -8,7 +8,16 @@ spec:
   selector:
     node: node3
   ports:
-  - name: discovery
-    port: 25000
-    targetPort: 25000
+  - name: ipc
+    port: 21002
+    targetPort: 21002
+  - name: raftport
+    port: 50403
+    targetPort: 50403
+  - name: rpcport
+    port: 22002
+    targetPort: 22002
+  - name: geth
+    port: 9003
+    targetPort: 9003
   type: LoadBalancer
